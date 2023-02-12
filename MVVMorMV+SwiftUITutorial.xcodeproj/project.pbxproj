@@ -7,24 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		669D216F2998D63D0061F702 /* MVVM_SwiftUITutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669D216E2998D63D0061F702 /* MVVM_SwiftUITutorialApp.swift */; };
+		669D216F2998D63D0061F702 /* MVVMorMV_SwiftUITutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669D216E2998D63D0061F702 /* MVVMorMV_SwiftUITutorialApp.swift */; };
 		669D21712998D63D0061F702 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669D21702998D63D0061F702 /* ContentView.swift */; };
 		669D21732998D63E0061F702 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 669D21722998D63E0061F702 /* Assets.xcassets */; };
 		669D21762998D63E0061F702 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 669D21752998D63E0061F702 /* Preview Assets.xcassets */; };
 		669D217E2998D67C0061F702 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669D217D2998D67C0061F702 /* WebService.swift */; };
 		669D21812998D6B50061F702 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669D21802998D6B50061F702 /* Product.swift */; };
-		669D21842998D8630061F702 /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669D21832998D8630061F702 /* ProductListViewModel.swift */; };
+		669D21872998FE780061F702 /* StoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669D21862998FE780061F702 /* StoreModel.swift */; };
+		669D218A29990C970061F702 /* NumberFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669D218929990C970061F702 /* NumberFormatter+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		669D216B2998D63D0061F702 /* MVVMorMV+SwiftUITutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVMorMV+SwiftUITutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		669D216E2998D63D0061F702 /* MVVM_SwiftUITutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_SwiftUITutorialApp.swift; sourceTree = "<group>"; };
+		669D216E2998D63D0061F702 /* MVVMorMV_SwiftUITutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMorMV_SwiftUITutorialApp.swift; sourceTree = "<group>"; };
 		669D21702998D63D0061F702 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		669D21722998D63E0061F702 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		669D21752998D63E0061F702 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		669D217D2998D67C0061F702 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		669D21802998D6B50061F702 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
-		669D21832998D8630061F702 /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
+		669D21862998FE780061F702 /* StoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreModel.swift; sourceTree = "<group>"; };
+		669D218929990C970061F702 /* NumberFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +59,11 @@
 		669D216D2998D63D0061F702 /* MVVMorMV+SwiftUITutorial */ = {
 			isa = PBXGroup;
 			children = (
+				669D218829990C7F0061F702 /* Extensions */,
 				669D21852998F8F50061F702 /* View */,
-				669D21822998D8360061F702 /* View Models */,
 				669D217F2998D6A80061F702 /* Models */,
 				669D217C2998D6620061F702 /* Services */,
-				669D216E2998D63D0061F702 /* MVVM_SwiftUITutorialApp.swift */,
+				669D216E2998D63D0061F702 /* MVVMorMV_SwiftUITutorialApp.swift */,
 				669D21722998D63E0061F702 /* Assets.xcassets */,
 				669D21742998D63E0061F702 /* Preview Content */,
 			);
@@ -88,16 +90,9 @@
 			isa = PBXGroup;
 			children = (
 				669D21802998D6B50061F702 /* Product.swift */,
+				669D21862998FE780061F702 /* StoreModel.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		669D21822998D8360061F702 /* View Models */ = {
-			isa = PBXGroup;
-			children = (
-				669D21832998D8630061F702 /* ProductListViewModel.swift */,
-			);
-			path = "View Models";
 			sourceTree = "<group>";
 		};
 		669D21852998F8F50061F702 /* View */ = {
@@ -106,6 +101,14 @@
 				669D21702998D63D0061F702 /* ContentView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		669D218829990C7F0061F702 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				669D218929990C970061F702 /* NumberFormatter+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,10 +182,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				669D217E2998D67C0061F702 /* WebService.swift in Sources */,
-				669D21842998D8630061F702 /* ProductListViewModel.swift in Sources */,
+				669D21872998FE780061F702 /* StoreModel.swift in Sources */,
 				669D21812998D6B50061F702 /* Product.swift in Sources */,
 				669D21712998D63D0061F702 /* ContentView.swift in Sources */,
-				669D216F2998D63D0061F702 /* MVVM_SwiftUITutorialApp.swift in Sources */,
+				669D216F2998D63D0061F702 /* MVVMorMV_SwiftUITutorialApp.swift in Sources */,
+				669D218A29990C970061F702 /* NumberFormatter+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
